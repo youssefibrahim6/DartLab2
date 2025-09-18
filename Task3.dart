@@ -4,11 +4,13 @@ int areaNormal(int length, int width) {
 /////////////////////////////////////
 int areaArrow(int length, int width) => length * width;
 ////////////////////////////////////
-var areaAnonymous = (int l, int w) {
-    return l * w;
+var areaAnonymous = (int length, int width) {
+    return length * width;
   };
 ///////////////////////////////////
-
+ double calculateArea(double length, double width, Function formula) {
+    return formula(length, width);
+  }
 void main() {
     int length = 20;
     int width = 10;
